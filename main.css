@@ -1,0 +1,489 @@
+.page{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	max-width: 640px;
+}
+
+/*加载页面*/
+.loaingpage{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	display: table;
+	text-align: center;
+	z-index: 0;
+}
+.loaingpage .loaingpage-td{
+	display: table-cell;
+	vertical-align: middle;
+}
+.loaingpage .loaingpage-td .loaingpage-logo{
+	margin: auto;
+	width: 65%;
+}
+.loaingpage .loaingpage-td .loaingpage-logo .logo{
+	width: 100%;
+	height: 100%;
+	background-image: url(images/loading.png);
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+.loaingpage .loaingpage-td .loaingpage-logo .logo .black{
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	transition: height .25s;
+    -moz-transition: height .25s;
+    -webkit-transition: height .25s;
+    -o-transition: height .25s;
+}
+.loaingpage .loaingpage-td span{
+	display: inline-block;
+	color: #fff;
+	font-size: 28px;
+	letter-spacing: 2px;
+}
+.loaingpage .zacao{
+	position: absolute;
+	bottom: 15px;
+	left: 0px;
+	margin-bottom: 0px;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+/*第一页*/
+.page-one{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.page-one .pageone-bg{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/p1.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page-one .pageone-bg .sanren{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 33.3%;
+	background-image: url(images/p1-sanren.png);
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.page-one .pageone-bg .yi{
+    position: absolute;
+    left: 0px;
+    bottom: 33.3%;
+    width: 100%;
+    height: 33.3%;
+    background-image: url(images/p1-yi.png);
+    background-size: contain;
+    background-position: 10%;
+    background-repeat: no-repeat;
+}
+
+/*第二页*/
+.page-two{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+.pagetwo-bg{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	display: table;
+	text-align: center;
+}
+.pagetwo-bg .pagetwobg-td{
+	display: table-cell;
+	vertical-align: middle;
+}
+.pagetwo-bg .pagetwobg-td p{
+	margin-bottom: 0px;
+	padding: 0 15px 50%;
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+.pagetwo-bg .pagetwobg-td .row{
+	margin: 0px;
+	padding: 5% 0;
+}
+.pagetwo-bg .pagetwobg-td .row .col-xs-6 .btn,
+.pagetwo-bg .pagetwobg-td .row .col-xs-6 .btn:focus{
+	border-radius: 34px;
+	min-width: 100px;
+	outline: none;
+}
+
+/*第三页*/
+.page-three-one{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+.pagethreeone-bg{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/p3-bg.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pagethreeone-bg .beida{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/p3-beida.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 0;
+}
+.pagethreeone-bg .talk-one{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/p3-talk1.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+}
+.pagethreeone-bg .talk-two{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/p3-talk2.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 2;
+}
+
+.pagethreeone-bg .heroshadow{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/p3-shadow.png);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 3;
+}
+
+.pagethreeone-bg .herohand{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/p3-hand.png);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 4;
+}
+
+.pagethreeone-bg .talk-three{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/p3-talk3.png);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 5;
+}
+
+/*第三页2*/
+.page-three-two{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+.pagethreetwo-bg{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/p3-bg.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pagethreetwo-bg .beida{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/p3-beida.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 0;
+}
+.pagethreetwo-bg .talk-one{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/p32-talk1.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+}
+.pagethreetwo-bg .talk-two{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/p32-talk2.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 2;
+}
+
+.pagethreetwo-bg .heroshadow{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/p3-shadow.png);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 3;
+}
+
+.pagethreetwo-bg .herohand{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/p3-hand.png);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 4;
+}
+
+.pagethreetwo-bg .talk-three{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/p3-talk3.png);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 5;
+}
+
+
+/*第四张*/
+.page-four{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+}
+.pagefour-bg{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/p4-bg.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pagefour-bg .thehero{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/thehero.png);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 0;
+}
+.pagefour-bg .talk-one{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/p4-talk1.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+}
+.pagefour-bg .talk-two{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/p4-talk2.png);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 2;
+}
+
+/*第五张*/
+.page-five{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+}
+.pagefive-bg{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/p3-bg.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pagefive-bg .personage{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 0;
+}
+.pagefive-bg .kaoshan-title{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/kaoshan-title.png);
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+}
+.pagefive-bg .kaoshan-btn{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	padding: 6px 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100%;
+	z-index: 2;
+}
+.pagefive-bg .kaoshan-btn .col-xs-6{
+	text-align: center;
+}
+.pagefive-bg .kaoshan-btn .col-xs-6 .btn,.pagefive-bg .kaoshan-btn .col-xs-6 .btn:active{
+	margin: auto;
+	width: 100%;
+	height: 70px;
+	background-size: cover;
+	background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50%;
+	outline: none;
+	box-shadow: none;
+}
+.changekaoshan,.changekaoshan:active{
+	background-image: url(images/changekaoshan.png);
+}
+.sharekaoshan,.sharekaoshan:active{
+	background-image: url(images/sharekaoshan.png);
+}
+
+.kaoshan-share{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/sharebg.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 3;
+	display: table;
+	text-align: center;
+}
+.kaoshan-share .kaoshan-share-td{
+	display: table-cell;
+	vertical-align: middle;
+}
+.kaoshan-share .kaoshan-share-td img{
+	width: 200px;
+	height: 200px;
+}
+.close-kaoshan{
+	position: absolute;
+	right: 5px;
+	top:5px;
+	width: 50px;
+	height: 50px;
+	background-image: url(images/close.png);
+	background-size: cover;
+	background-position: 50%;
+	background-repeat:no-repeat;
+}

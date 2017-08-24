@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>谁是你的靠山</title>
+
+		<!-- Bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="share.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<input type="hidden" class="shareperson">
+
+		<div class="loaingpage">
+			<div class="loaingpage-td">
+				<div class="loaingpage-logo">
+					<div class="logo">
+						<div class="black"></div>
+					</div>
+				</div>
+				<span></span>
+			</div>
+			<p class="zacao">杂草君 | “良”心制作</p>
+		</div>
+
+		<div class="page">
+			<div class="page-five" style="display: none;">
+				<div class="pagefive-bg">
+					<div class="personage" style="background-image: url(images/heidishifu.png);"></div>
+					<div class="kaoshan-title"></div>
+					<div class="kaoshan-btn row">
+						<div class="col-xs-12">
+							<a class="btn shishijiushishi" href="http://mp.weixin.qq.com/s?__biz=MzAxNDQ5ODAwMA==&mid=401697078&idx=1&sn=77f5a5f9613711440a7bba5b9e034ccd&3rd=MzA3MDU4NTYzMw==&scene=6#rd"></a>
+						</div>
+					</div>
+					<div class="kaoshan-share" style="display: none;">
+						<div class="kaoshan-share-td">
+							<img src="images/qrcode.png">
+						</div>
+						<div class="close-kaoshan"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="bootstrap/js/jquery.2.2.0.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="share.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var s = $(".shareperson").val();
+				if(s == "一洪哥"){
+					$(".personage").attr("style","background-image: url(Qifanhui/Wap/Public/Patron/images/yihong.png);");
+				}else if(s == "杂草君"){
+					$(".personage").attr("style","background-image: url(Qifanhui/Wap/Public/Patron/images/zacaojun.png);");
+				}else if(s == "饭堂大妈"){
+					$(".personage").attr("style","background-image: url(Qifanhui/Wap/Public/Patron/images/fantangdama.png);");
+				}else if(s == "保安队长"){
+					$(".personage").attr("style","background-image: url(Qifanhui/Wap/Public/Patron/images/baoange.png);");
+				}else if(s == "黑的师傅"){
+					$(".personage").attr("style","background-image: url(Qifanhui/Wap/Public/Patron/images/heidishifu.png);");
+				}else if(s == "快递小哥"){
+					$(".personage").attr("style","background-image: url(Qifanhui/Wap/Public/Patron/images/kuaidixiaoge.png);");
+				}
+			})
+		</script>
+	</body>
+</html>
